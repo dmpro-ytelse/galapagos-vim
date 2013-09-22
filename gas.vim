@@ -20,9 +20,9 @@ syn match register 'r31' containedin=call_or_jmp_line
 syn match constant '[\t ,]\d\+'
 syn match constant '[\t ,][-+]\d\+'
 syn match constant '[\t ,]0x[0-9a-fA-F]\+'
-syn match constant '[\t ,]0x[-+][0-9a-fA-F]\+'
+syn match constant '[\t ,][-+]0x[0-9a-fA-F]\+'
 syn match constant '[\t ,]0b[01]\+'
-syn match constant '[\t ,]0b[-+][01]\+'
+syn match constant '[\t ,][-+]0b[01]\+'
 
 syn match operators 'add'
 syn match operators 'addi'

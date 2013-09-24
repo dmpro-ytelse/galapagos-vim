@@ -1,7 +1,7 @@
-gene-vim
+galapagos-vim
 ========
 
-Vim syntax hilighting for gene assembly.
+Vim syntax hilighting for Galapagos assembly.
 
 ## Installation
 

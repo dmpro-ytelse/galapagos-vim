@@ -69,27 +69,22 @@ syn region ifcond start='if' end=/:/ keepend contains=conditional,cond,condition
 
 syn match comment '/\*.*\*/'
 
-
-syn match cond 'eq' contained containedin=ifcond
-syn match cond 'neq' contained containedin=ifcond
-syn match cond 'z' contained containedin=ifcond
-syn match cond 'nz' contained containedin=ifcond
-syn match cond 'gt' contained containedin=ifcond
-syn match cond 'gte' contained containedin=ifcond
-syn match cond 'lt' contained containedin=ifcond
-syn match cond 'lte' contained containedin=ifcond
-syn match cond 'v' contained containedin=ifcond
-syn match cond 'nv' contained containedin=ifcond
 syn match cond 'equal' contained containedin=ifcond
 syn match cond 'not equal' contained containedin=ifcond
-syn match cond 'zero' contained containedin=ifcond
-syn match cond 'not zero' contained containedin=ifcond
 syn match cond 'greater than' contained containedin=ifcond
 syn match cond 'greater than or equal' contained containedin=ifcond
 syn match cond 'less than' contained containedin=ifcond
 syn match cond 'less than or equal' contained containedin=ifcond
+syn match cond 'zero' contained containedin=ifcond
+syn match cond 'not zero' contained containedin=ifcond
+syn match cond 'positive' contained containedin=ifcond
+syn match cond 'positive or zero' contained containedin=ifcond
+syn match cond 'negative' contained containedin=ifcond
+syn match cond 'negative or zero' contained containedin=ifcond
 syn match cond 'overflow' contained containedin=ifcond
 syn match cond 'not overflow' contained containedin=ifcond
+syn match cond 'never' contained containedin=ifcond
+syn match cond 'always' contained containedin=ifcond
 
 let b:current_syntax = "gas"
 

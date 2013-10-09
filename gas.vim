@@ -67,7 +67,7 @@ syn region call_or_jmp_line start=/jmp/ end=/.*/ oneline
 
 syn region ifcond start='if' end=/:/ keepend contains=conditional,cond,conditional_colon
 
-syn match comment '/\*.*\*/'
+syn region comment start="/\*" end="\*/"
 
 syn match cond 'equal' contained containedin=ifcond
 syn match cond 'not equal' contained containedin=ifcond

@@ -1,5 +1,5 @@
 " Vim syntax file
-" Language: Gene Assembly
+" Language: Galapagos Assembly
 " Maintainer: Sigve Sebastian Farstad
 
 if exists("b:current_syntax")
